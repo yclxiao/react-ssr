@@ -77,7 +77,7 @@ export default class ToastItem extends Component {
         );
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({
             in: {$set: true}
         }, () => {
